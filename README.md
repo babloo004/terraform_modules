@@ -1,4 +1,4 @@
-terraform init
-terraform validate
-terraform plan
-terradform apply
+- terraform init
+- terraform validate
+- terraform plan
+- terradform apply
