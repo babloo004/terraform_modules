@@ -21,8 +21,8 @@ resource "azurerm_virtual_machine" "azvm" {
 
     os_profile {
       computer_name = "terra-vm"
-      admin_username = "avi04"
-      admin_password = "Avi@8358"
+      admin_username = "username"
+      admin_password = "password"
     }
 
     os_profile_linux_config {
@@ -40,4 +40,5 @@ resource "azurerm_virtual_machine_data_disk_attachment" "azdska" {
     virtual_machine_id = azurerm_virtual_machine.azvm.id
     lun = "10"
     caching = "ReadWrite"
+
 }
